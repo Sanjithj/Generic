@@ -17,6 +17,7 @@ public class GenericMaximum<T>{
 		GenericMaximum<E> genricobj=new  GenericMaximum<E>();
 		genricobj.findmax(12, 10, 30);
 		genricobj.findmax(30.4, 55.6, 22.3);
+		genricobj.findmax("Apple","Peach","Banana");
 	}
 
 }
