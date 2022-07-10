@@ -6,7 +6,7 @@ public class GenericMaximum<T>{
 		if(t1.compareTo(t2)>0&&t1.compareTo(t3)>0) {
 			System.out.println("T1 is maximum"+t1);
 		}else if(t2.compareTo(t1)>0&& t2.compareTo(t3)>0) {
-			System.out.println("T2 max="+t2);
+			System.out.println("T2 is max="+t2);
 		}
 		else {
 			System.out.println("T3 is max="+t3);
@@ -16,7 +16,7 @@ public class GenericMaximum<T>{
 	public static <E> void main(String[] args) {
 		GenericMaximum<E> genricobj=new  GenericMaximum<E>();
 		genricobj.findmax(12, 10, 30);
-		
+		genricobj.findmax(30.4, 55.6, 22.3);
 	}
 
 }
