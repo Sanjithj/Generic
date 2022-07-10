@@ -15,7 +15,7 @@ public class GenericMaximum<T>{
 	
 	public static <E> void main(String[] args) {
 		GenericMaximum<E> genricobj=new  GenericMaximum<E>();
-		genricobj.findmax(12, 30, 10);
+		genricobj.findmax(12, 10, 30);
 		
 	}
 
