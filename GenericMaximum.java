@@ -1,28 +1,23 @@
 package com.bridgelabz;
 
-public class GenericMaximum<T extends Comparable<T>>
-	{
-	T[] vals;
-	 GenericMaximum(T[] o) 
-	{ 
-	vals = o;
-	}
-	public T max() 
-	{
-	T v = vals[0];
-	for(int i=1; i < vals.length;i++)
-	if(vals[i].compareTo(v) > 0) 
-	v = vals[i];
-	return v;
-	}
-	}
-	class Testcase
-	{
-	public static void main(String args[])
-	{
-	Integer inums[]={10,2,5,4,6,1};
-	 GenericMaximum<Integer> iob = new  GenericMaximum<Integer>(inums);
-	System.out.println("Max value in inums: " + iob.max());
+public class GenericMaximum<T>{
 	
+	public <T extends Comparable<T>> void findmax(T t1,T t2,T t3) {
+		if(t1.compareTo(t2)>0&&t1.compareTo(t3)>0) {
+			System.out.println("T1 is maximum"+t1);
+		}else if(t2.compareTo(t1)>0&& t2.compareTo(t3)>0) {
+			System.out.println("T2 max="+t2);
+		}
+		else {
+			System.out.println("T3 is max="+t3);
+		}
 	}
+	
+	public static <E> void main(String[] args) {
+		GenericMaximum<E> genricobj=new  GenericMaximum<E>();
+		genricobj.findmax(10, 12, 30);
+		
 	}
+
+}
+	
